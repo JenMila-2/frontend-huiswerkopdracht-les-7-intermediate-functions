@@ -64,11 +64,7 @@ function checkEmailValidity(email) {
     const validEmailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     //Controleert een email op juiste format via standaard richtlijnen en te controleren op specifieke tekens.
     //Dit had waarschijnlijk ook met includes() opgelost kunnen worden, maar de code hierboven is korter.
-    if (email.match(validEmailFormat)) {
-        return true;
-    } else {
-        return false;
-    }
+    return email.match(validEmailFormat);
 }
 console.log(checkEmailValidity("n.eeken@novi.nl"));
 console.log(checkEmailValidity("tessmellink@novi.nl"));
