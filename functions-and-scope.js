@@ -132,7 +132,7 @@ console.log(roundedAverage);
 // ---- Verwachte uitkomst: 9
 
 //Functie Math.max.apply gebruikt, mag dit?
-const highestStudentGrade = Math.max.apply(null, grades);
+const highestStudentGrade = Math.max(grades);
 console.log(highestStudentGrade);
 
 
