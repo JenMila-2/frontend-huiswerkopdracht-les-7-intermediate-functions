@@ -75,7 +75,7 @@ console.log("Total students: " + totalStudents);
 let result = 0;
 
 for (let i = 0; i < grades.length; i++) {
-    result += grades[i] / 14;
+    result += grades[i] / grades.length;
 }
 console.log("The average grade this year is: " + result);
 
